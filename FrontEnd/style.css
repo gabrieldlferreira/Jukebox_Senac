@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital@0;1&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Libre Franklin';
+
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.078);
+    }
+    50% {
+        transform: scale(1.208);
+    }
+    
+    100%{
+        transform: scale(1.078);
+    }
+    
+    
+}
+
+html, body {
+    width: 100vw;
+    height: 10px;
+    
+}
+
+.principal {
+    display: flex;
+    width: 100%;
+    height: 781px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(Images/fundo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.img-logo {
+    margin-bottom: 50px;
+    animation: zoom 0.8s;
+    animation-iteration-count: infinite;
+}
+
+.title {
+    color: white;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 64px;
+    text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+input {
+    text-align: center;
+    height: 40px;
+    width: 40%;
+    border-radius: 25px;
+    border: none;
+    font-family: 'Libre Franklin';
+    font-style: italic;
+    font-size: 1.1em;
+    margin: 50px 0;
+    background: #E0DEDE;
+    
+
+
+}
+
+button {
+    height: 40px;
+    width: 10%;
+    border-radius: 25px;
+    border-style: none;
+    background: #E0DEDE;
+    font-weight: bold;
+    font-size: 1.1em;
+    font-style: italic;
+    
+}
+
+button:hover {
+    background-color: black;
+    color: #E0DEDE;
+    transition: all 0.4s;
+}
+
+.sucesso {
+    margin-top: 30px;
+    color: #FFFFFF;
+    font-family: 'Libre Franklin';
+    font-size: 20px;
+    font-weight: 100;
+}
+
+@media screen and (max-width:375px) {
+    input {
+        width: 300px;
+    }
+
+    button {
+        width: 100px;
+    }
+
+}
+@media screen and (max-width:480px) {
+
+    .title {
+        font-size: 3rem;
+    }
+
+    input {
+        width: 300px;
+    }
+
+    button {
+        width: 100px;
+    }
+
+}
